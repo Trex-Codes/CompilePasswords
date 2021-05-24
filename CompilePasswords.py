@@ -9,7 +9,7 @@ print("\033[0;36m", "   / /\/ '__/ _ \ \/ /____ / /  / _ \ / _` |/ _ \/ __|  ", 
 print("\033[0;36m ", " / /  | | |  __/>  <_____/ /__| (_) | (_| |  __/\__ \   ",  "\033[0;m")
 print("\033[0;36m", "  \/   |_|  \___/_/\_\    \____/\___/ \__,_|\___||___/  ",  "\033[0;m")
 
-print("\n","\033[1;31m","[Info]","\033[0;m","\033[0;33m","Verification of passwords (ONLY FAMILY [MOM-TREX])\n")
+print("\n","\033[1;31m[Info]","\033[0;m","\033[0;33m Verification of passwords (ONLY FAMILY [MOM-TREX])\n")
 print("\033[0;35m"," || wrotten in Python","\033[0;m")
 print("\033[0;35m"," || If you can see this... sth is wrong")
 print("\033[0;35m"," || All of my life be here >> https://github.com/Trex-Codes\n","\033[0;m")
@@ -88,6 +88,7 @@ while cont != 0:
 	elif optionPrinc == "q":
 		cont=cont-1
 		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
+		call('clear')
 
 	else:
 		call('clear')
