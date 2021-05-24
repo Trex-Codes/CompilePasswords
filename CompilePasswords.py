@@ -2,7 +2,6 @@ import os
 import ctypes, sys
 from subprocess import call
 
-
 print("\033[0;36m", "  _____                      ___          _             ",  "\033[0;m")
 print("\033[0;36m", " /__   \_ __ _____  __      / __\___   __| | ___  ___   ",  "\033[0;m")
 print("\033[0;36m", "   / /\/ '__/ _ \ \/ /____ / /  / _ \ / _` |/ _ \/ __|  ",  "\033[0;m")
@@ -15,7 +14,6 @@ print("\033[0;35m"," || If you can see this... sth is wrong")
 print("\033[0;35m"," || All of my life be here >> https://github.com/Trex-Codes\n","\033[0;m")
 
 def Aida():
-
 	contador = 0
 	while contador < 1:
 
@@ -32,7 +30,6 @@ def Aida():
 			print(" \033[4;31m","Data no exist yet","\033[4;m")
 
 def Trex():
-
 	contador = 0
 	while contador < 1:
 
@@ -46,8 +43,7 @@ def Trex():
 			contador = 2
 		else: 
 			print(" \033[4;31m","Data no exist yet","\033[4;m")
-
-
+			
 cont = 1
 while cont != 0:
 
@@ -57,7 +53,6 @@ while cont != 0:
 	print("\033[0;m")
 
 	if optionPrinc == "1":
-
 		coun2 = 0
 		while coun2 == 0:
 
@@ -84,15 +79,10 @@ while cont != 0:
 
 	elif optionPrinc == "2":
 		print("# admin()")
-
 	elif optionPrinc == "q":
 		cont=cont-1
 		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
 		call('clear')
-
 	else:
 		call('clear')
 		print("\033[1;31m","[!] Option Wrong!!  ||  Only ([1], [2] [q])\n","\033[0;m")
-
-
-
