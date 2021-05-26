@@ -2,20 +2,20 @@ import os
 import ctypes, sys
 from subprocess import call
 
+# import file Banners (START-END)
+from BannerStart import Random_HeaderStart
+from BannerEnd import Random_HeaderEnd
+
 import sys
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
-
-print("\033[0;36m", "  _____                      ___          _             ",  "\033[0;m")
-print("\033[0;36m", " /__   \_ __ _____  __      / __\___   __| | ___  ___   ",  "\033[0;m")
-print("\033[0;36m", "   / /\/ '__/ _ \ \/ /____ / /  / _ \ / _` |/ _ \/ __|  ",  "\033[0;m")
-print("\033[0;36m ", " / /  | | |  __/>  <_____/ /__| (_) | (_| |  __/\__ \   ",  "\033[0;m")
-print("\033[0;36m", "  \/   |_|  \___/_/\_\    \____/\___/ \__,_|\___||___/  ",  "\033[0;m")
+# funcion of headers
+Random_HeaderStart()
 
 print("\n","\033[1;31m[Info]","\033[0;m","\033[0;33mVerification of passwords ([TREX-CODES])\n")
-print("\033[0;35m"," || wrotten in Python","\033[0;m")
+print("\033[0;35m"," || Wrotten in Python","\033[0;m")
 print("\033[0;35m"," || If you can see this... sth is wrong")
 print("\033[0;35m"," || All of my life be here >> https://github.com/Trex-Codes\n","\033[0;m")
 
@@ -114,19 +114,8 @@ while cont != 0:
 		print("# admin()")
 	elif optionPrinc == "q":
 		cont=cont-1
-		# print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
-		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m\n\n")
-		print("\033[1;32m","  ▄████▄  ▒█████  ███▄ ▄███▓█████     ▄▄▄▄   ▄▄▄      ▄████▄  ██ ▄█▀     ██████ ▒█████  ▒█████  ███▄    █     ▐██▌ ","\033[0;m")
-		print("\033[1;32m"," ▒██▀ ▀█ ▒██▒  ██▓██▒▀█▀ ██▓█   ▀    ▓█████▄▒████▄   ▒██▀ ▀█  ██▄█▒    ▒██    ▒▒██▒  ██▒██▒  ██▒██ ▀█   █     ▐██▌ ","\033[0;m")
-		print("\033[1;32m"," ▒▓█    ▄▒██░  ██▓██    ▓██▒███      ▒██▒ ▄█▒██  ▀█▄ ▒▓█    ▄▓███▄░    ░ ▓██▄  ▒██░  ██▒██░  ██▓██  ▀█ ██▒    ▐██▌ ","\033[0;m")
-		print("\033[1;32m"," ▒▓▓▄ ▄██▒██   ██▒██    ▒██▒▓█  ▄    ▒██░█▀ ░██▄▄▄▄██▒▓▓▄ ▄██▓██ █▄      ▒   ██▒██   ██▒██   ██▓██▒  ▐▌██▒    ▓██▒ ","\033[0;m")
-		print("\033[1;32m"," ▒ ▓███▀ ░ ████▓▒▒██▒   ░██░▒████▒   ░▓█  ▀█▓▓█   ▓██▒ ▓███▀ ▒██▒ █▄   ▒██████▒░ ████▓▒░ ████▓▒▒██░   ▓██░    ▒▄▄  ","\033[0;m")
-		print("\033[1;32m"," ░ ░▒ ▒  ░ ▒░▒░▒░░ ▒░   ░  ░░ ▒░ ░   ░▒▓███▀▒▒▒   ▓▒█░ ░▒ ▒  ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░ ▒░▒░▒░░ ▒░▒░▒░░ ▒░   ▒ ▒     ░▀▀▒ ","\033[0;m")
-		print("\033[1;32m","   ░  ▒    ░ ▒ ▒░░  ░      ░░ ░  ░   ▒░▒   ░  ▒   ▒▒ ░ ░  ▒  ░ ░▒ ▒░   ░ ░▒  ░ ░ ░ ▒ ▒░  ░ ▒ ▒░░ ░░   ░ ▒░    ░  ░ ","\033[0;m")
-		print("\033[1;32m"," ░       ░ ░ ░ ▒ ░      ░     ░       ░    ░  ░   ▒  ░       ░ ░░ ░    ░  ░  ░ ░ ░ ░ ▒ ░ ░ ░ ▒    ░   ░ ░        ░ ","\033[0;m")
-		print("\033[1;32m"," ░ ░         ░ ░        ░     ░  ░    ░           ░  ░ ░     ░  ░            ░     ░ ░     ░ ░          ░     ░    ","\033[0;m")
-		print("\033[1;32m"," ░                                         ░         ░                                                             ","\033[0;m")
-		print("\033[1;32m"," 																												  ","\033[0;m")
+		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
+		Random_HeaderEnd()
 		call('clear')
 	else:
 		call('clear')
