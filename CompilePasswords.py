@@ -16,8 +16,8 @@ print("\033[0;36m", "  \/   |_|  \___/_/\_\    \____/\___/ \__,_|\___||___/  ", 
 
 print("\n","\033[1;31m[Info]","\033[0;m","\033[0;33mVerification of passwords ([TREX-CODES])\n")
 print("\033[0;35m"," || wrotten in Python","\033[0;m")
-print("\033[0;35m"," || If you can see this... sth is wrong")
-print("\033[0;35m"," || All of my life be here >> https://github.com/Trex-Codes\n","\033[0;m")
+print("\033[0;35m"," || Coded by Trex-Codes")
+print("\033[0;35m"," || >> https://github.com/Trex-Codes\n","\033[0;m")
 
 def Person1():
 	contador = 0
