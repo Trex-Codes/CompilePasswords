@@ -3,10 +3,19 @@ import os
 import ctypes, sys 
 from subprocess import call
 
+<<<<<<< HEAD
+=======
+# import file Banners (START-END)
+from BannerStart import Random_HeaderStart
+from BannerEnd import Random_HeaderEnd
+
+import sys
+>>>>>>> Update_Banners
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
+<<<<<<< HEAD
 # Colors 
 COLOR_BANNER = '\033[0;36m'
 ERROR = '\033[1;31m'
@@ -31,6 +40,15 @@ print("\n",ERROR,"[Info]",MESSAGE,"Verification of passwords ([2 PERSONS OR MORE
 print(MESSAGE2," || Wrotten in Python")
 print(MESSAGE2," || coded by Trex-Codes")
 print(MESSAGE2," || >> https://github.com/Trex-Codesn", END)
+=======
+# funcion of headers
+Random_HeaderStart()
+
+print("\n","\033[1;31m[Info]","\033[0;m","\033[0;33mVerification of passwords ([TREX-CODES])\n")
+print("\033[0;35m"," || wrotten in Python","\033[0;m")
+print("\033[0;35m"," || Coded by Trex-Codes")
+print("\033[0;35m"," || >> https://github.com/Trex-Codes\n","\033[0;m")
+>>>>>>> Update_Banners
 
 def Person1():
 	contador = 0
@@ -116,6 +134,7 @@ while cont != 0:
 				print('\n')
 				print(ERROR,"[!] Only (P1 or P2)", END)
 	elif optionPrinc == "q":
+<<<<<<< HEAD
 		cont = cont -1
 		print(SUCCESS,"[+] SUCCESSFUL EXIT!!",END,"\n")
 		Banner_End = SUCCESS + '''
@@ -131,6 +150,11 @@ while cont != 0:
   ░                                            ░           ░                                                                 
   		'''
 		print(Banner_End)
+=======
+		cont=cont-1
+		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
+		Random_HeaderEnd()
+>>>>>>> Update_Banners
 		call('clear')
 	else:
 		call('clear')
