@@ -1,21 +1,15 @@
-
 import os 
 import ctypes, sys 
 from subprocess import call
 
-<<<<<<< HEAD
-=======
 # import file Banners (START-END)
 from BannerStart import Random_HeaderStart
 from BannerEnd import Random_HeaderEnd
 
-import sys
->>>>>>> Update_Banners
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
-<<<<<<< HEAD
 # Colors 
 COLOR_BANNER = '\033[0;36m'
 ERROR = '\033[1;31m'
@@ -27,28 +21,14 @@ MESSAGE3 = '\033[1;35m'
 MESSAGE4 = '\033[1;34m'
 END = '\033[0;m'
 
-Banner = COLOR_BANNER + '''
-___________                               _________            .___             
-\__    ___/______   ____ ___  ___         \_   ___ \  ____   __| _/____   ______
-  |    |  \_  __ \_/ __ \\  \/  /  ______ /    \  \/ /  _ \ / __ |/ __ \ /  ___/
-  |    |   |  | \/\  ___/ >    <  /_____/ \     \___(  <_> ) /_/ \  ___/ \___ \ 
-  |____|   |__|    \___  >__/\_ \          \______  /\____/\____ |\___  >____  >
-                       \/      \/                 \/            \/    \/     \/  '''
+call('clear')
+# Function of Banner Start
+Random_HeaderStart()
 
-print(Banner)                       
 print("\n",ERROR,"[Info]",MESSAGE,"Verification of passwords ([2 PERSONS OR MORE..])\n")
 print(MESSAGE2," || Wrotten in Python")
 print(MESSAGE2," || coded by Trex-Codes")
-print(MESSAGE2," || >> https://github.com/Trex-Codesn", END)
-=======
-# funcion of headers
-Random_HeaderStart()
-
-print("\n","\033[1;31m[Info]","\033[0;m","\033[0;33mVerification of passwords ([TREX-CODES])\n")
-print("\033[0;35m"," || wrotten in Python","\033[0;m")
-print("\033[0;35m"," || Coded by Trex-Codes")
-print("\033[0;35m"," || >> https://github.com/Trex-Codes\n","\033[0;m")
->>>>>>> Update_Banners
+print(MESSAGE2," || >> https://github.com/Trex-Codes", END)
 
 def Person1():
 	contador = 0
@@ -85,7 +65,6 @@ def Person2():
 		Data = {
 			# Program, Url, user, password
 			"Gmail": "https://mail.google.com/mail/u/0/ ," "tfsf123@gmail.com ," "Hola123",
-
 		}
 
 		print('\n')
@@ -132,31 +111,13 @@ while cont != 0:
 				coun2 = 1
 			else:
 				print('\n')
-				print(ERROR,"[!] Only (P1 or P2)", END)
+				print(ERROR," [!] Only (P1 or P2)", END)
 	elif optionPrinc == "q":
-<<<<<<< HEAD
-		cont = cont -1
-		print(SUCCESS,"[+] SUCCESSFUL EXIT!!",END,"\n")
-		Banner_End = SUCCESS + '''
-   ▄████▄   ▒█████   ███▄ ▄███▓▓█████     ▄▄▄▄    ▄▄▄       ▄████▄   ██ ▄█▀     ██████  ▒█████   ▒█████   ███▄    █     ▐██▌ 
-  ▒██▀ ▀█  ▒██▒  ██▒▓██▒▀█▀ ██▒▓█   ▀    ▓█████▄ ▒████▄    ▒██▀ ▀█   ██▄█▒    ▒██    ▒ ▒██▒  ██▒▒██▒  ██▒ ██ ▀█   █     ▐██▌ 
-  ▒▓█    ▄ ▒██░  ██▒▓██    ▓██░▒███      ▒██▒ ▄██▒██  ▀█▄  ▒▓█    ▄ ▓███▄░    ░ ▓██▄   ▒██░  ██▒▒██░  ██▒▓██  ▀█ ██▒    ▐██▌ 
-  ▒▓▓▄ ▄██▒▒██   ██░▒██    ▒██ ▒▓█  ▄    ▒██░█▀  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄      ▒   ██▒▒██   ██░▒██   ██░▓██▒  ▐▌██▒    ▓██▒ 
-  ▒ ▓███▀ ░░ ████▓▒░▒██▒   ░██▒░▒████▒   ░▓█  ▀█▓ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄   ▒██████▒▒░ ████▓▒░░ ████▓▒░▒██░   ▓██░    ▒▄▄  
-  ░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ░  ░░░ ▒░ ░   ░▒▓███▀▒ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒░   ▒ ▒     ░▀▀▒ 
-    ░  ▒     ░ ▒ ▒░ ░  ░      ░ ░ ░  ░   ▒░▒   ░   ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░   ░ ░▒  ░ ░  ░ ▒ ▒░   ░ ▒ ▒░ ░ ░░   ░ ▒░    ░  ░ 
-  ░        ░ ░ ░ ▒  ░      ░      ░       ░    ░   ░   ▒   ░        ░ ░░ ░    ░  ░  ░  ░ ░ ░ ▒  ░ ░ ░ ▒     ░   ░ ░        ░ 
-  ░ ░          ░ ░         ░      ░  ░    ░            ░  ░░ ░      ░  ░            ░      ░ ░      ░ ░           ░     ░    
-  ░                                            ░           ░                                                                 
-  		'''
-		print(Banner_End)
-=======
 		cont=cont-1
-		print("\033[1;32m"," [+] SUCCESSFUL EXIT!!","\033[0;m")
+		print(SUCCESS," [+] SUCCESSFUL EXIT!!",END)
+		# Function of Banner end
 		Random_HeaderEnd()
->>>>>>> Update_Banners
 		call('clear')
 	else:
 		call('clear')
 		print(ERROR,"[!] Option Wrong!! || Only ([1], [2], [q]\n",END)
-
