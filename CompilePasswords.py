@@ -127,3 +127,5 @@ def Init():
 		else:
 			call('clear')
 			print(ERROR,"[!] Option Wrong!! || Only ([1], [2], [q]\n",END)
+   
+Init()

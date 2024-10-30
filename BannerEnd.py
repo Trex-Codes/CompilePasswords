@@ -98,23 +98,23 @@ header6End = BannerColorRandom + """
 # Smaill Keyboard
 
 def Random_HeaderEnd():
-   headers_END = [header1End, header2End, header3End, header4End, header5End, header6End]
+  headers_END = [header1End, header2End, header3End, header4End, header5End, header6End]
 
-   # save in the variable choise of which banner will print
-   BannerRandom = random.choice(headers_END)
-   print(BannerRandom)
+  # save in the variable choise of which banner will print
+  BannerRandom = random.choice(headers_END)
+  # print(BannerRandom)
 
-   # -- print specific banner
-   # print(header1End)
+  # print(specific banner)
+  # print(header1End)
 
-   # -- print all banners 
-   # for i in headers_END:
-   #    print(i)
+  # -- print all banners 
+  # for i in headers_END:
+    # print(i)
 
-   # cont = 0
-   # while cont < len(headers_END):
-   #    print(headers_END[cont])
-   #    cont = cont + 1
+  # cont = 0
+  # while cont < len(headers_END):
+    # print(headers_END[cont])
+    # cont = cont + 1
 
 # -- print running this file
-# Random_HeaderEnd()
+Random_HeaderEnd()
